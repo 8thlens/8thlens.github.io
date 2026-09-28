@@ -13,7 +13,7 @@
 <body>
   <header class="nav">
     <a class="logo" href="#top">8TH.LENS</a>
-    <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <nav><a href="#work">Work</a><a href="#short-form">Short Form</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
@@ -92,8 +92,47 @@
       </div>
     </section>
 
+    <section id="short-form" class="section short-form">
+      <div class="section-head">
+        <p class="eyebrow">02 / SHORT FORM</p>
+        <p class="section-note">Short-form edits built for social — grading, advertising and vertical storytelling.</p>
+      </div>
+
+      <div class="short-grid">
+        <article class="short-project local-video-card" data-local="assets/videos/short-form/grading-study.mp4" data-title="COLOUR STUDY — GRADING / LOOK DEVELOPMENT">
+          <button class="media short-thumb" aria-label="Play Colour Study — Grading / Look Development">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/images/short-form/grading-study.jpg">
+              <source src="assets/videos/short-form/grading-study.mp4" type="video/mp4">
+            </video>
+            <span class="play">PLAY REEL <b>▶</b></span>
+          </button>
+          <div class="project-info"><div><h2>COLOUR STUDY — GRADING / LOOK DEVELOPMENT</h2><p>Colour · Look Development · Short Form</p></div><span class="number">01</span></div>
+        </article>
+
+        <article class="short-project local-video-card" data-local="assets/videos/short-form/edinburgh-futsal-club.mp4" data-title="EDINBURGH FUTSAL CLUB — SOCIAL AD">
+          <button class="media short-thumb" aria-label="Play Edinburgh Futsal Club — Social Ad">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/images/short-form/edinburgh-futsal-club.jpg">
+              <source src="assets/videos/short-form/edinburgh-futsal-club.mp4" type="video/mp4">
+            </video>
+            <span class="play">PLAY REEL <b>▶</b></span>
+          </button>
+          <div class="project-info"><div><h2>EDINBURGH FUTSAL CLUB — SOCIAL AD</h2><p>Editing · Commercial · Social</p></div><span class="number">02</span></div>
+        </article>
+
+        <article class="short-project local-video-card" data-local="assets/videos/short-form/pokemon-30.mp4" data-title="POKÉMON 30 — SOCIAL AD">
+          <button class="media short-thumb" aria-label="Play Pokémon 30 — Social Ad">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/images/short-form/pokemon-30.jpg">
+              <source src="assets/videos/short-form/pokemon-30.mp4" type="video/mp4">
+            </video>
+            <span class="play">PLAY REEL <b>▶</b></span>
+          </button>
+          <div class="project-info"><div><h2>POKÉMON 30 — SOCIAL AD</h2><p>Editing · Commercial · Social</p></div><span class="number">03</span></div>
+        </article>
+      </div>
+    </section>
+
     <section id="about" class="section about">
-      <div class="section-head"><p class="eyebrow">02 / ABOUT</p></div>
+      <div class="section-head"><p class="eyebrow">03 / ABOUT</p></div>
       <div class="about-grid">
         <div><p class="big-copy">I make cinematic films around people, places and stories — with a particular focus on editing, atmosphere and visual storytelling.</p></div>
         <div class="about-copy">
@@ -106,7 +145,7 @@
     </section>
 
     <section id="contact" class="contact">
-      <p class="eyebrow">03 / CONTACT</p>
+      <p class="eyebrow">04 / CONTACT</p>
       <h2>HAVE A PROJECT<br>IN MIND?</h2>
       <a class="email" href="mailto:corduneanul@gmail.com">corduneanul@gmail.com</a>
       <div class="links">
@@ -121,7 +160,10 @@
   <div class="modal" id="videoModal" aria-hidden="true">
     <div class="modal-inner">
       <button class="close" id="closeModal" aria-label="Close video">×</button>
-      <div class="modal-video"><iframe id="player" src="" title="Portfolio video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="modal-video">
+        <iframe id="player" src="" title="Portfolio video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <video id="localPlayer" controls playsinline preload="metadata"></video>
+      </div>
       <p id="modalTitle"></p>
     </div>
   </div>

@@ -11,6 +11,17 @@
 .media{aspect-ratio:16/9;overflow:hidden}.video-thumb{position:relative;width:100%;border:0;padding:0;background:#111;cursor:pointer;display:block}.video-thumb img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s ease,filter .7s ease}.video-thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent 55%);pointer-events:none}.video-thumb:hover img{transform:scale(1.025);filter:brightness(.8)}.play{position:absolute;z-index:2;left:24px;bottom:20px;color:#fff;font-size:10px;letter-spacing:.14em}.play b{font-size:9px;margin-left:7px}.project-info{display:flex;justify-content:space-between;padding:17px 0 45px}.project-info h2{font:500 14px "Space Grotesk",sans-serif;letter-spacing:.04em;text-align:left}.project-info p{margin-top:6px;color:#777;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.number{color:#555;font-size:10px}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 3vw}
 .about{border-top:1px solid var(--line);padding-top:54px;padding-bottom:54px}.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:10vw}.big-copy{font:400 clamp(24px,2.45vw,38px)/1.08 "Space Grotesk",sans-serif;letter-spacing:-.045em}.about-copy{color:#999;font-size:14px;line-height:1.8;max-width:480px}.about-copy p+p{margin-top:22px}.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:35px}.skills span{border:1px solid var(--line);padding:9px 12px;color:#aaa;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
 .contact{min-height:42vh;padding:54px 4vw 50px;border-top:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.contact h2{font:500 clamp(38px,5.2vw,78px)/.9 "Space Grotesk",sans-serif;letter-spacing:-.07em}.email{font-size:clamp(16px,1.8vw,24px);width:max-content;border-bottom:1px solid #555;padding-bottom:8px}.links{display:flex;gap:30px;margin-top:35px;color:#888;font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.short-form{padding-top:20px}
+.short-grid{width:88vw;max-width:1600px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3vw}
+.short-thumb{aspect-ratio:9/16;background:#111;overflow:hidden}
+.short-thumb video{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s ease,filter .7s ease}
+.short-thumb:hover video{transform:scale(1.02);filter:brightness(.82)}
+.short-thumb .play{left:18px;bottom:17px}
+.short-project .project-info{padding-bottom:28px}
+.modal-video #localPlayer{display:none;width:100%;height:100%;background:#000;object-fit:contain}
+@media(max-width:900px){.short-grid{width:88vw;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 4vw}}
+@media(max-width:700px){.short-grid{width:90vw;grid-template-columns:1fr;gap:0}.short-project .project-info{padding-bottom:32px}.nav nav a:nth-child(2){display:none}}
+
 .modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:5vw}.modal.open{display:flex}.modal-inner{width:min(1200px,100%);position:relative}.modal-video{aspect-ratio:16/9;background:#000}.modal-video iframe{width:100%;height:100%;border:0}.close{position:absolute;right:0;top:-48px;background:none;border:0;color:#fff;font-size:34px;line-height:1;cursor:pointer}.modal-inner p{margin-top:14px;color:#aaa;font:500 13px "Space Grotesk",sans-serif;letter-spacing:.05em}
 footer{border-top:1px solid var(--line);padding:22px 4vw;display:flex;justify-content:space-between;color:#555;font-size:9px;letter-spacing:.12em}
 @media(max-width:700px){.hero{width:100%;min-height:55vh;height:55vh}.nav{padding:22px 5vw}.nav nav{gap:14px}.hero{padding:10vh 5vw 8vh}.scroll{display:none}.section{padding:55px 5vw}.section-head{display:block}.section-note{margin-top:18px}.project-grid,.about-grid{grid-template-columns:1fr}.about-grid{gap:50px}.project-grid .project-info{padding-bottom:32px}.contact{padding:55px 5vw;min-height:48vh}.links{flex-wrap:wrap}.close{top:-42px}}
@@ -26,5 +37,4 @@ footer{border-top:1px solid var(--line);padding:22px 4vw;display:flex;justify-co
 .work > .featured{margin-bottom:10px}
 @media (min-width:1200px){
   .work > .featured,.work > .project-grid{width:88vw;max-width:1600px}
-}
 }
